@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit 버전 일관성을 위해 BOM 사용
+    testImplementation platform('org.junit:junit-bom:5.11.0')
+
+    // JUnit5 API + Engine
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // JUnit Platform Launcher (Gradle 8~9에서 필수)
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+
+    // ============================================
+    // 병렬 실행 설정 (JUnit5 + Gradle)
+    // ============================================
+
+    // JUnit 병렬 기능 활성화
+    systemProperty "junit.jupiter.execution.parallel.enabled", "true"
+
+    // 메서드 단위 병렬
+    systemProperty "junit.jupiter.execution.parallel.mode.default", "concurrent"
+
+    // 클래스 단위 병렬
+    systemProperty "junit.jupiter.execution.parallel.mode.classes.default", "concurrent"
+
+    // Gradle worker 수 (CPU 절반 사용)
+    // → 안정성과 속도의 균형
+    //maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    maxParallelForks = 2
+
+    // XML 리포트 유지
+    reports {
+        junitXml.required = true
+        junitXml.outputLocation = file("$buildDir/test-results/junit")
+        html.required = false
+    }
+}

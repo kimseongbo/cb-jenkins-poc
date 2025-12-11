@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BatteryServiceTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-12-11T13:55:49.940Z" hostname="DESKTOP-QPOQ412" time="0.058">
+  <properties/>
+  <testcase name="testCalculatePercentage_zeroVoltage_0003()" classname="BatteryServiceTest" time="0.052"/>
+  <testcase name="testCalculatePercentage_full_0001()" classname="BatteryServiceTest" time="0.052"/>
+  <testcase name="testCriticalTemperature_trueBoundary_0019()" classname="BatteryServiceTest" time="0.051"/>
+  <testcase name="testDetermineHealth_goodUpperBoundary_0014()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testCalculatePercentage_smallFullVoltage_0006()" classname="BatteryServiceTest" time="0.052"/>
+  <testcase name="testCalculatePercentage_negativeVoltage_0005()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testCalculatePercentage_half_0002()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testIsTemperatureSafe_aboveRange_0012()" classname="BatteryServiceTest" time="0.052"/>
+  <testcase name="testCalculatePercentage_zeroFullVoltage_0008()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testIsTemperatureSafe_belowRange_0011()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testIsTemperatureSafe_maxBoundary_0010()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testDetermineHealth_goodLowerBoundary_0013()" classname="BatteryServiceTest" time="0.052"/>
+  <testcase name="testIsTemperatureSafe_minBoundary_0009()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testDetermineHealth_warnLowerBoundary_0015()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testCriticalTemperature_falseBelowBoundary_0020()" classname="BatteryServiceTest" time="0.001"/>
+  <testcase name="testCalculatePercentage_overVoltage_0004()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testDetermineHealth_badBoundary_0017()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testDetermineHealth_badHighCycles_0018()" classname="BatteryServiceTest" time="0.0"/>
+  <testcase name="testCalculatePercentage_largeFullVoltage_0007()" classname="BatteryServiceTest" time="0.003"/>
+  <testcase name="testDetermineHealth_warnUpperBoundary_0016()" classname="BatteryServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

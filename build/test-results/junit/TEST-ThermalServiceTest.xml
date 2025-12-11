@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ThermalServiceTest" tests="20" skipped="0" failures="5" errors="0" timestamp="2025-12-11T13:55:49.945Z" hostname="DESKTOP-QPOQ412" time="0.069">
+  <properties/>
+  <testcase name="testShutdown_falseNormal_0016()" classname="ThermalServiceTest" time="0.055"/>
+  <testcase name="testShutdown_trueBoundary_0017()" classname="ThermalServiceTest" time="0.055"/>
+  <testcase name="testClassify_lowToNormalBoundary_0002()" classname="ThermalServiceTest" time="0.055"/>
+  <testcase name="testRapidRise_trueHighDelta_0013()" classname="ThermalServiceTest" time="0.0"/>
+  <testcase name="testClassify_criticalRange_0007()" classname="ThermalServiceTest" time="0.055"/>
+  <testcase name="testRapidRise_trueBoundary_0012()" classname="ThermalServiceTest" time="0.055"/>
+  <testcase name="testClassify_warnUpperBoundary_0006()" classname="ThermalServiceTest" time="0.0"/>
+  <testcase name="testClassify_low_0001()" classname="ThermalServiceTest" time="0.001"/>
+  <testcase name="testRapidRise_falseZero_0015()" classname="ThermalServiceTest" time="0.001"/>
+  <testcase name="testShutdown_shouldFailAsTrue_0020()" classname="ThermalServiceTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at app//ThermalServiceTest.testShutdown_shouldFailAsTrue_0020(ThermalServiceTest.java:106)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:436)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:670)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+</failure>
+  </testcase>
+  <testcase name="testClassify_warnRange_0005()" classname="ThermalServiceTest" time="0.003"/>
+  <testcase name="testShutdown_shouldFailAsFalse_0019()" classname="ThermalServiceTest" time="0.007">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at app//org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at app//ThermalServiceTest.testShutdown_shouldFailAsFalse_0019(ThermalServiceTest.java:101)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+</failure>
+  </testcase>
+  <testcase name="testClassify_shouldFailAsWarn_0009()" classname="ThermalServiceTest" time="0.009">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;WARN&gt; but was: &lt;LOW&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;WARN&gt; but was: &lt;LOW&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//ThermalServiceTest.testClassify_shouldFailAsWarn_0009(ThermalServiceTest.java:51)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+</failure>
+  </testcase>
+  <testcase name="testRapidRise_shouldFailAsFalse_0014()" classname="ThermalServiceTest" time="0.065">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at app//org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at app//org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at app//ThermalServiceTest.testRapidRise_shouldFailAsFalse_0014(ThermalServiceTest.java:76)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+</failure>
+  </testcase>
+  <testcase name="testClassify_criticalHigh_0010()" classname="ThermalServiceTest" time="0.001"/>
+  <testcase name="testRapidRise_falseSmallDelta_0011()" classname="ThermalServiceTest" time="0.001"/>
+  <testcase name="testShutdown_trueHigh_00118()" classname="ThermalServiceTest" time="0.001"/>
+  <testcase name="testClassify_normalLowerBoundary_0003()" classname="ThermalServiceTest" time="0.002"/>
+  <testcase name="testClassify_shouldFailAsNormal_0008()" classname="ThermalServiceTest" time="0.003">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;NORMAL&gt; but was: &lt;WARN&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;NORMAL&gt; but was: &lt;WARN&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//ThermalServiceTest.testClassify_shouldFailAsNormal_0008(ThermalServiceTest.java:46)
+	at java.base@17.0.12/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.12/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:194)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+</failure>
+  </testcase>
+  <testcase name="testClassify_normalUpperBoundary_0004()" classname="ThermalServiceTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
